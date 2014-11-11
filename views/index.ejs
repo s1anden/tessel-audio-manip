@@ -1,0 +1,22 @@
+<html>
+<script
+    src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+	$(function() {
+		$("#start").on('click', function(event) {
+			$("#start").text("Stop");
+			$("#start").attr('id', 'stop');
+		});
+		$(document).on('click', '#stop', function() {
+			$('#stop').text("Start");
+			$('#stop').attr('id', 'start');
+		});
+	});
+</script>
+<body>
+	<h1>Welcome to the online voice distorter</h1>
+	<p>To record your voice, press the "Start" button.</p>
+	<button id="start">Start</button>
+</body>
+</html>
